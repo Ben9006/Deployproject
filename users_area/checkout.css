@@ -1,0 +1,143 @@
+:root
+{
+   --blue: rgb(0, 26, 255);
+   --black: #130f40;
+   --light-color: #666;
+   --box-shadow:0 .5rem 1.5rem rgba(0,0,.1);
+   --border: 2rem solid rgba(0,0,.1);
+   --outline: 1rem solid rgba(0,0,0.1);
+}
+
+*
+{
+    font-family: sans-serif;
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: #eee;
+}
+
+/*css code for banner*/
+section
+{
+    padding: 2rem 9%;
+}
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.0rem;
+    color: var(--black);
+}
+
+
+.heading span 
+{
+    background: green;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+
+.header
+{
+
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2rem 9%;
+background: #fff;
+box-shadow: var(--box-shadow);
+
+}
+
+.header .logo
+{
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: green;
+}
+
+.header .navbar a
+{
+    font-size:1.7rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 1rem;
+    color: var(--light-color);
+}
+.header .navbar a :hover
+{
+    color: green;
+
+}
+
+
+.header .welcome-section {
+    background: white;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.header .welcome-section a {
+    color: var(--light-color);
+    font-weight: bold;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.header .welcome-section a:hover {
+    color: green;
+}
+
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border: 0px solid green;
+    padding: 3rem 0;
+    background: rgb(86, 190, 54);
+}
+
+.footer p
+{
+    color: white;
+    font-size: 1.4rem;
+
+}
+
+/*checkout*/
+.checkout
+{
+    margin-top: 100px;
+    font-size: 2rem;
+}

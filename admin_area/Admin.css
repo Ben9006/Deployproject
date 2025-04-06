@@ -1,0 +1,228 @@
+:root
+{
+   --blue: rgb(0, 26, 255);
+   --black: #130f40;
+   --light-color: #666;
+   --box-shadow:0 .5rem 1.5rem rgba(0,0,.1);
+   --border: 2rem solid rgba(0,0,.1);
+   --outline: 1rem solid rgba(0,0,0.1);
+   --white: #fff;
+}
+
+*
+{
+    font-family: sans-serif;
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: white;
+}
+
+.click-btn {
+    margin: 0 .5rem;/* Adjust margin for proper spacing */
+    padding: .6rem 1.8rem; 
+    /* Adjust margin for proper spacing */
+    font-size: 1.1rem; /* Reduce font size */
+    background-color: rgb(69, 160, 104);
+    border: 0px solid black; /* Optional: Makes borders visible */
+    border-radius: 0.5rem; /* Adjust for rounded corners */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    width: 10rem;
+    height: 5rem;
+    display: inline-block;
+}
+
+
+
+.click-btn:hover {
+    background-color: rgb(50, 130, 80); /* Darker shade on hover */
+}
+
+.header
+{
+border: 0px solid;
+position: fixed;
+border-radius: 2px;
+top: 0;
+right: 0;
+left: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1.5rem;
+background: green;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Aligns icon with text */
+    gap: 10px; /* Adds space between icon and text */
+}
+
+.header .Guest {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 20px; /* Moves text inward */
+}
+
+.home
+{
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+.home h3
+{
+    font-size: 20px;
+}
+
+.home_2
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 0px solid;
+    background-size: cover;
+    padding: 0.5rem 0;
+    background: rgba(97, 88, 88, 0.521);
+}
+.home_2 .row {
+    text-align: center;
+    margin: auto;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Ensures space between buttons */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.home_2 .row .btn
+{
+    padding: 0.5rem 0;
+}
+.home_2 .row a
+{
+    color: #f5e5e5d7;
+
+}
+
+.home_2 .row img {
+    width: 90px;
+    margin-right: 15px; /* Adds space between the image and buttons */
+}
+.container
+{
+    padding: 10px;
+}
+
+/* footer */
+.footer
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border: 0px solid green;
+    padding: 1.5rem 0;
+    background: rgb(86, 190, 54);
+}
+
+.footer p
+{
+    color: white;
+    font-size: 1.1rem;
+
+}
+
+.table-border
+{
+    border: 1px solid black;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse; 
+}
+
+.table-border th, .table-border td {
+    padding: 10px 15px; /* Adds space inside each cell */
+    text-align: left; /* Aligns text to the left */
+    white-space: nowrap; /* Prevents text from wrapping */
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table-border th {
+    padding-left: 20px; /* Adds left spacing for headers */
+    padding-right: 20px; /* Adds right spacing for headers */
+}
+
+.table-head
+{
+    background-color: rgb(64, 141, 64);
+    border: 1px solid black;
+}
+
+.product-image
+{
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+}
+
+.product-btn
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem 1.8rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 0px solid;
+    border-radius: .5rem;
+    color: green;
+    cursor: pointer;
+    background: none;
+    box-shadow: var(--box-shadow);
+}
+
+.input {
+    text-transform: none;
+}
+
+.form-control
+{
+    text-transform: none;
+}
+
+
+.welcome a {
+    color: var(--white);
+    font-weight: bold;
+    margin: 0 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
